@@ -1,3 +1,4 @@
+import 'package:FlutterUniversity/description_place.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -28,34 +29,12 @@ class MyApp extends StatelessWidget {
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         home: Scaffold(
-            appBar: AppBar(
-              title: Text("Paladax en Flutter"),
-              backgroundColor: Colors.black,
-              centerTitle: true,
-            ),
-            body: Stack(
-              alignment: Alignment.center,
-              children: <Widget>[
-                Container(
-                  child: Image.network(
-                    "https://scontent.floh2-1.fna.fbcdn.net/v/t1.15752-9/117074197_735312633937548_142357979034518208_n.png?_nc_cat=106&_nc_sid=b96e70&_nc_ohc=5p9seJsbD7QAX_qtdN6&_nc_ht=scontent.floh2-1.fna&oh=d7f3c367afff7924125191906443299e&oe=5F4EC481",
-                    fit: BoxFit.cover,
-                    height: double.infinity,
-                    width: double.infinity,
-                    alignment: Alignment.bottomCenter,
-                  ),
-                ),
-                Container(
-                  height: 40,
-                  color: Colors.white.withOpacity(0.2),
-                ),
-                Container(
-                  child: Text(
-                    "Definitivamente inculeable",
-                  ),
-                )
-              ],
-            ))
+          appBar: AppBar(
+            title: Text("Paladax update"),
+          ),
+          body: new DescriptionPlace("Mechas pizza", 4,
+              "Duis exercitation irure officia et officia labore aliquip do esse. Et aliqua velit enim ullamco aliquip adipisicing id consectetur aliqua. Nulla reprehenderit labore ex officia voluptate tempor cupidatat. Nisi adipisicing adipisicing aute dolore adipisicing laboris mollit excepteur excepteur enim culpa consectetur. Irure occaecat commodo proident sunt aliqua laborum deserunt proident et eiusmod. Labore sunt qui mollit ex excepteur velit. Nisi dolor ut laboris in."),
+        )
 
         //MyHomePage(title: 'Flutter Demo Home Page'),
         );
