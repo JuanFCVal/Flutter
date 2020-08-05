@@ -4,6 +4,8 @@ class DescriptionPlace extends StatelessWidget {
   String namePlace;
   int starts;
   String descriptionPlace;
+  String textPueba =
+      "Duis exercitation irure officia et officia labore aliquip do esse. Et aliqua velit enim ullamco aliquip adipisicing id consectetur aliqua. Nulla reprehenderit labore ex officia voluptate tempor cupidatat. Nisi adipisicing adipisicing aute dolore adipisicing laboris mollit excepteur excepteur enim culpa consectetur. Irure occaecat commodo proident sunt aliqua laborum deserunt proident et eiusmod. Labore sunt qui mollit ex excepteur velit. Nisi dolor ut laboris in.";
   DescriptionPlace(this.namePlace, this.starts, this.descriptionPlace);
   @override
   Widget build(BuildContext context) {
@@ -17,6 +19,7 @@ class DescriptionPlace extends StatelessWidget {
           color: Colors.amber,
           size: 18,
         ));
+
     final half_star = Container(
         margin: EdgeInsets.only(
           top: 323.0,
@@ -27,15 +30,20 @@ class DescriptionPlace extends StatelessWidget {
           color: Colors.amber,
           size: 18,
         ));
+
     final description = Container(
       margin: EdgeInsets.only(top: 20, left: 20, right: 20),
       child: Text(
         descriptionPlace,
-        style:
-            TextStyle(color: Color.fromRGBO(86, 101, 115, 0.8), fontSize: 16),
+        style: TextStyle(
+          color: Color.fromRGBO(86, 101, 115, 0.8),
+          fontSize: 16,
+          fontFamily: "Lato",
+        ),
         textAlign: TextAlign.left,
       ),
     );
+
     final star = Container(
         margin: EdgeInsets.only(
           top: 323.0,
@@ -46,6 +54,7 @@ class DescriptionPlace extends StatelessWidget {
           color: Colors.amber,
           size: 18,
         ));
+
     final title_stars = Row(children: <Widget>[
       Container(
         margin: EdgeInsets.only(
@@ -56,6 +65,7 @@ class DescriptionPlace extends StatelessWidget {
         child: Text(
           namePlace,
           style: TextStyle(
+            fontFamily: "Lato",
             fontSize: 30.0,
             fontWeight: FontWeight.w900,
             color: Colors.black,
