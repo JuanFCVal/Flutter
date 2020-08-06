@@ -1,5 +1,6 @@
 import 'package:FlutterUniversity/description_place.dart';
 import 'package:flutter/material.dart';
+import 'reviewlist.dart';
 
 void main() {
   runApp(MyApp());
@@ -30,10 +31,15 @@ class MyApp extends StatelessWidget {
         ),
         home: Scaffold(
           appBar: AppBar(
-            title: Text("Paladax update"),
+            title: Text("Guidance"),
           ),
-          body: new DescriptionPlace("Mechas pizza", 4,
-              "Duis exercitation irure officia et officia labore aliquip do esse. Et aliqua velit enim ullamco aliquip adipisicing id consectetur aliqua. Nulla reprehenderit labore ex officia voluptate tempor cupidatat. Nisi adipisicing adipisicing aute dolore adipisicing laboris mollit excepteur excepteur enim culpa consectetur. Irure occaecat commodo proident sunt aliqua laborum deserunt proident et eiusmod. Labore sunt qui mollit ex excepteur velit. Nisi dolor ut laboris in."),
+          body: Column(
+            children: <Widget>[
+              new DescriptionPlace("Bahamas", 4,
+                  "Duis exercitation irure officia et officia labore aliquip do esse. Et aliqua velit enim ullamco aliquip adipisicing id consectetur aliqua. Nulla reprehenderit labore ex officia voluptate tempor cupidatat. Nisi adipisicing adipisicing aute dolore adipisicing laboris mollit excepteur excepteur enim culpa consectetur. Irure occaecat commodo proident sunt aliqua laborum deserunt proident et eiusmod. Labore sunt qui mollit ex excepteur velit. Nisi dolor ut laboris in."),
+              new Reviewlist(),
+            ],
+          ),
         )
 
         //MyHomePage(title: 'Flutter Demo Home Page'),
