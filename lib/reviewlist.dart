@@ -21,6 +21,11 @@ class Reviewlist extends StatelessWidget {
             "majo78162",
             "1 comment 5 photos",
             "Don't know how I came here, but love it."),
+        new Review(
+            "https://cdn3.iconfinder.com/data/icons/avatars-round-flat/33/avat-01-512.png",
+            "user112",
+            "1 comment 3 photos",
+            "This ´place sucks."),
       ],
     );
     return list;

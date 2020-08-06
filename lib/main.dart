@@ -1,6 +1,8 @@
 import 'package:FlutterUniversity/description_place.dart';
+import 'package:FlutterUniversity/gradientback.dart';
 import 'package:flutter/material.dart';
 import 'reviewlist.dart';
+import 'card_image.dart';
 
 void main() {
   runApp(MyApp());
@@ -30,17 +32,19 @@ class MyApp extends StatelessWidget {
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         home: Scaffold(
-          appBar: AppBar(
-            title: Text("Guidance"),
-          ),
-          body: Column(
-            children: <Widget>[
-              new DescriptionPlace("Bahamas", 4,
-                  "Duis exercitation irure officia et officia labore aliquip do esse. Et aliqua velit enim ullamco aliquip adipisicing id consectetur aliqua. Nulla reprehenderit labore ex officia voluptate tempor cupidatat. Nisi adipisicing adipisicing aute dolore adipisicing laboris mollit excepteur excepteur enim culpa consectetur. Irure occaecat commodo proident sunt aliqua laborum deserunt proident et eiusmod. Labore sunt qui mollit ex excepteur velit. Nisi dolor ut laboris in."),
-              new Reviewlist(),
-            ],
-          ),
-        )
+            body: Stack(
+          children: <Widget>[
+            ListView(
+              children: <Widget>[
+                new DescriptionPlace("Bahamas", 4,
+                    "Duis exercitation irure officia et officia labore aliquip do esse. Et aliqua velit enim ullamco aliquip adipisicing id consectetur aliqua. Nulla reprehenderit labore ex officia voluptate tempor cupidatat. Nisi adipisicing adipisicing aute dolore adipisicing laboris mollit excepteur excepteur enim culpa consectetur. Irure occaecat commodo proident sunt aliqua laborum deserunt proident et eiusmod. Labore sunt qui mollit ex excepteur velit. Nisi dolor ut laboris in."),
+                new Reviewlist(),
+              ],
+            ),
+            new GradientBack("Main page"),
+            new CardImage(),
+          ],
+        ))
 
         //MyHomePage(title: 'Flutter Demo Home Page'),
         );
