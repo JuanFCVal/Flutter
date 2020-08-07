@@ -2,7 +2,7 @@ import 'package:FlutterUniversity/description_place.dart';
 import 'package:FlutterUniversity/gradientback.dart';
 import 'package:flutter/material.dart';
 import 'reviewlist.dart';
-import 'card_image.dart';
+import 'card_image_list.dart';
 
 void main() {
   runApp(MyApp());
@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
               ],
             ),
             new GradientBack("Main page"),
-            new CardImage(),
+            new CardImageList()
           ],
         ))
 
