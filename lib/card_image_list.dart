@@ -5,8 +5,7 @@ class CardImageList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      alignment: Alignment.center,
-      height: 300,
+      height: 350,
       child: ListView(
         padding: EdgeInsets.all(25),
         scrollDirection: Axis.horizontal,

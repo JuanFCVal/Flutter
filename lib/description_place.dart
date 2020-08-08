@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'InkWellButtom.dart';
 
 class DescriptionPlace extends StatelessWidget {
   String namePlace;
@@ -79,7 +80,8 @@ class DescriptionPlace extends StatelessWidget {
     ]); //Se define como un row
 
     return Column(
-      children: <Widget>[title_stars, description],
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[title_stars, description, new ButtonPurple()],
     );
   }
 }
