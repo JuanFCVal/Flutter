@@ -1,4 +1,4 @@
-import 'package:FlutterUniversity/reviewlist.dart';
+import 'package:FlutterUniversity/Screens/Home/Widgets/reviewlist.dart';
 import 'package:flutter/material.dart';
 
 import 'description_place.dart';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'home.dart';
-import 'searchPage.dart';
-import 'ProfilePage.dart';
+import 'Screens/Home/Widgets/home.dart';
+import 'Screens/Search/Widgets/searchPage.dart';
+import 'Screens/Profile/widgets/ProfilePage.dart';
 
 class BottomNavigation extends StatefulWidget {
   @override

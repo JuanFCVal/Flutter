@@ -1,9 +1,5 @@
-import 'package:FlutterUniversity/description_place.dart';
-import 'package:FlutterUniversity/home.dart';
 import 'package:FlutterUniversity/trips.dart';
-import 'header.dart';
 import 'package:flutter/material.dart';
-import 'reviewlist.dart';
 
 void main() {
   runApp(MyApp());

@@ -1,4 +1,4 @@
-import 'package:FlutterUniversity/review.dart';
+import 'package:FlutterUniversity/Screens/Home/Widgets/review.dart';
 import 'package:flutter/material.dart';
 import 'button_corazon.dart';
 
